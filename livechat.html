@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="/bdtaxassets/2017926c/bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="/bdtaxassets/2017926c/font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" type="text/css" href="/bdtaxassets/2017926c/css/bootstrap-yii.css" />
+        <link rel="stylesheet" type="text/css" href="/bdtaxassets/2017926c/css/jquery-ui-bootstrap.css" />
+        <script type="text/javascript" src="/bdtaxassets/7361edb4/jquery.min.js"></script>
+        <script type="text/javascript" src="/bdtaxassets/2017926c/bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="/bdtaxassets/2017926c/js/bootstrap-noconflict.js"></script>
+        <script type="text/javascript" src="/bdtaxassets/2017926c/bootbox/bootbox.min.js"></script>
+        <script type="text/javascript" src="/bdtaxassets/2017926c/notify/notify.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <style type="text/css">
+            .hide_cross {
+                width: 100%;
+                height: 60px;
+                color: #ffffff;
+                padding: 18px;
+                background-color: rgb(87, 167, 115);
+                z-index: 1;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+            #chatra.chatra--pos-right {
+                z-index: 0 !important;
+            }
+        </style>
+    </head>
+
+<body>
+    <div class="hide_cross">Leave us a message. </div>
+<div style="text-align: center;padding-top: 10px;display: none" id="showlatter" >
+	<h1 style="color:#18A34A;font-size:25px">Please click on the green icon below to chat with us.</h1>
+	<h2 style="font-size:20px">We are here to help you.</h2>
+</div>
+
+<div style="text-align: center;padding-top: 10px;" id="showearly">
+	<h1 style="font-size:25px">Please wait a while. chatbox is loading.</h1>
+</div>
+
+
+<script>
+	//document.
+window.addEventListener('load', function () {
+   
+  Chatra('openChat', true);
+  setInterval(function () {document.getElementById('showlatter').style.display = 'block';
+  document.getElementById('showearly').style.display = 'none';
+}, 2000);
+  
+  //document.getElementById('showearly').style.display = 'none';
+}, false);
+    
+
+</script>
+<script>   
+
+(function(d, w, c) { w.ChatraID = 'tSt3hgnALKaspzCWF'; var s = d.createElement('script'); w[c] = w[c] || function() { (w[c].q = w[c].q || []).push(arguments); }; s.async = true; s.src = (d.location.protocol === 'https:' ? 'https:': 'http:') + '//call.chatra.io/chatra.js'; if (d.head) d.head.appendChild(s); })(document, window, 'Chatra');   
+
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+/*<![CDATA[*/
+jQuery(function($) {
+jQuery('[data-toggle=popover]').popover();
+jQuery('body').tooltip({"selector":"[data-toggle=tooltip]"});
+});
+/*]]>*/
+</script>
+</body>
+</html>   
