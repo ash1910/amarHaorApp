@@ -1,12 +1,12 @@
 {
   "expo": {
     "name": "amarHaor",
-    "slug": "amarHaor",
+    "slug": "amarhaor",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
-      "image": "./src/v1/assets/icons/splash.png",
+      "image": "./assets/spalash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -33,43 +33,20 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "permissions": [
-        "android.permission.CAMERA",
-        "android.permission.READ_EXTERNAL_STORAGE",
-        "android.permission.WRITE_EXTERNAL_STORAGE",
-        "android.permission.READ_INTERNAL_STORAGE",
-        "android.permission.WRITE_INTERNAL_STORAGE",
-        "android.permission.RECORD_AUDIO",
-        "android.permission.ACCESS_MEDIA_LOCATION"
-      ]
+      "permissions": []
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "plugins": [
-      [
-        "expo-image-picker",
-        {
-          "photosPermission": "The app accesses your photos to let you upload image.",
-          "cameraPermission": "The app accesses your camera to let you capture image."
-        }
-      ],
-      [
-        "expo-media-library",
-        {
-          "photosPermission": "Allow $(PRODUCT_NAME) to access your photos.",
-          "savePhotosPermission": "Allow $(PRODUCT_NAME) to save photos.",
-          "isAccessMediaLocationEnabled": true
-        }
-      ]
-    ],
+    "plugins": [],
     "extra": {
       "eas": {
-        "projectId": "c89cc165-d89a-4714-bd39-0379179dcdf0"
+        "projectId": "7ba7ee32-dd48-46c8-960b-cd0eec1dfc7f"
       }
     },
     "runtimeVersion": {
       "policy": "sdkVersion"
-    }
+    },
+    "owner": "ashraful1910"
   }
 }
