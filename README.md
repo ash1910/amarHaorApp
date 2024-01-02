@@ -1,5 +1,10 @@
 # README #
 
+windows 10 
+
+Access user : Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope CurrentUser
+
+
 This README would normally document whatever steps are necessary to get your application up and running.
 
 ### What is this repository for? ###

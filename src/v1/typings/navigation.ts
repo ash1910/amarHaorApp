@@ -5,11 +5,13 @@
 export enum ROOT_NAVIGATION {
   APP = 'APP',
   AUTH = 'AUTH',
+  PUBLIC = 'PUBLIC',
 }
 
 export type RootNavigationParams = {
   [ROOT_NAVIGATION.APP]: undefined;
   [ROOT_NAVIGATION.AUTH]: undefined;
+  [ROOT_NAVIGATION.PUBLIC]: undefined;
 };
 
 export enum APP_NAVIGATION {
@@ -46,4 +48,16 @@ export type AuthNavigationParams = {
   [AUTH_NAVIGATION.Register]: undefined;
   [AUTH_NAVIGATION.ForgotPassword]: undefined;
   [AUTH_NAVIGATION.ConfirmPassword]: undefined;
+};
+
+export enum PUBLIC_NAVIGATION {
+  PUBLIC_LANDING = 'PUBLIC_LANDING',
+  PUBLIC_SEARCH = 'PUBLIC_SEARCH',
+  PUBLIC_GALLERY = 'PUBLIC_GALLERY'
+}
+
+export type PublicNavigationParams = {
+  [PUBLIC_NAVIGATION.PUBLIC_LANDING]: undefined;
+  [PUBLIC_NAVIGATION.PUBLIC_SEARCH]: undefined;
+  [PUBLIC_NAVIGATION.PUBLIC_GALLERY]: undefined;
 };
