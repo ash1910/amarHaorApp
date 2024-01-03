@@ -51,9 +51,9 @@ export type AuthNavigationParams = {
 };
 
 export enum PUBLIC_NAVIGATION {
-  PUBLIC_LANDING = 'PUBLIC_LANDING',
-  PUBLIC_SEARCH = 'PUBLIC_SEARCH',
-  PUBLIC_GALLERY = 'PUBLIC_GALLERY'
+  PUBLIC_LANDING = 'Home',
+  PUBLIC_SEARCH = 'Explore',
+  PUBLIC_GALLERY = 'Gallery'
 }
 
 export type PublicNavigationParams = {
