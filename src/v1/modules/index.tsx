@@ -9,6 +9,8 @@ import { AuthContext } from "../providers/AuthProvider";
 import {createDrawerNavigator} from '@react-navigation/drawer';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Button, View, Text } from 'react-native';
+// Import Custom Sidebar
+import CustomSidebarMenu from '../component/CustomSidebarMenu';
 
 const Navigation = () => {
   const Stack = createStackNavigator();
@@ -53,7 +55,9 @@ const Navigation = () => {
   }
 
   return (
-    <Drawer.Navigator initialRouteName="Home">
+    <Drawer.Navigator initialRouteName="Home"
+        drawerContent={props => <CustomSidebarMenu {...props} />}
+    >
       <Drawer.Screen name="Home" component={HomeScreen} />
       <Drawer.Screen name="Notifications" component={NotificationsScreen} />
   </Drawer.Navigator>
